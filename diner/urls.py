@@ -3,4 +3,6 @@ from diner import views
 
 urlpatterns = [
     path('list/', views.index, name='index'),
+    path('', views.bootstrap, name='bootstrap'),
+
 ]

@@ -16,3 +16,9 @@ def index(request):
     question_list = Question.objects.all()
     context = {'question_list': question_list}
     return render(request, 'polls.html', context)
+
+
+def bootstrap(request):
+    return render(request, 'bootstrap.html')
+
+    # return HttpResponse('bootstrap.html')
